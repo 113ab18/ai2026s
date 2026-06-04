@@ -153,7 +153,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這是第一次專業的接觸到文生圖，之前一直都是下prompt給ai工具生圖，但這樣每次下的prompt有些微不同就有可能生出完全不一樣的圖，這次用comfyUI加上checkpoint跟lora，就可以讓checkpoint先決定基本畫風，再用lora決定固定的角色與風格濾鏡。我生了四次才成功，可能是因為prompt給的不完整，第一次根本沒生出芙莉蓮的角色，第二次只有女生沒有男生，不過這些都是有趣的經驗，蠻好玩的。
+
     </div>
   </div>
 
@@ -169,22 +170,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" ></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -192,13 +193,54 @@
       </table>
     </div>
   </div>
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="1.png" width="100%"/>
+        </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#ff0000;"> 
+      <figure>
+        <figcaption>完成芙莉蓮、欣梅爾Checkpoint文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl">Checkpoint連結</a>
+        <p>1024 * 1280</p>
+        <p>highly detailed, cinematic anime still, exceptional quality, top tier, 1boy, 1girl, frieren, himmel sousou no frieren, open air, waist up, looking at each other, light blue hair, cloak, short cape, earrings, filtered sunlight, daytime, hand resting on head, kesyeru
+          &lt;,
+        </p>
+        <p>ecchi, poor resolution, distorted anatomy, deformed hands, words, glitch, mutated fingers, extra limbs, missing limbs, bad crop, lowest quality, degraded quality, standard quality, compression artifacts, autograph, logo, watermark, fuzzy, creator name
+
+        </p>
+        <img src="2.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#7030a0;">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成芙莉蓮、欣梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1204563?modelVersionId=1356500">LoRA連結1</a>
+        <br>
+        <a href="https://civitai.com/models/1201355/r754496-or-shiiros-styles-or-niji">LoRA連結2</a>
+        <p>1024 * 1280</p>
+        <p>LoRA1 Strength : 0.5</p>
+        <p>LoRA2 Strength : 0.45</p>
+        <p>r17329_illu, xxx667_illu, ultra-detailed, 90s anime aesthetic, stunning visual, pristine quality, 1boy, 1girl, frieren, himmel $sousou no frieren$, outside, torso shot, locking eyes, light blue hair, cape, capelet, earrings, sunbeams through trees, daylight, patting head, kesyeru, sousou no frieren
+
+        </p>
+        <p>not safe for work, low resolution, flawed anatomy, poorly drawn hands, font, mistake, mutated hands, extra fingers, missing digits, cut off, lowest resolution, sub-standard quality, medium quality, compressed image, autograph, stamp, watermark, user tag, out of focus, illustrator name
+        </p>
+        <img src="3.png" width="100%"/>
+      </figure>
     </div>
   </div>
 
@@ -252,4 +294,3 @@
 
 </body>
 </html>
-
